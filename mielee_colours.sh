@@ -6,47 +6,62 @@ YELLOW='\e[0;33m'
 BLUE='\e[0;34m'
 MAGENTA='\e[0;35m'
 CYAN='\e[0;36m'
+WHITE='\e[0;37m'
 LRED='\e[0;91m'
 LGREEN='\e[0;92m'
 LYELLOW='\e[0;93m'
 LBLUE='\e[0;94m'
 LMAGENTA='\e[0;95m'
 LCYAN='\e[0;96m'
+LWHITE='\e[0;37m'
+BRED='\e[1;31m'
+BGREEN='\e[1;32m'
+BYELLOW='\e[1;33m'
+BBLUE='\e[1;34m'
+BMAGENTA='\e[1;35m'
+BCYAN='\e[1;36m'
+BLWHITE='\e[1;97m'
+BLRED='\e[1;91m'
+BLGREEN='\e[1;92m'
+BLYELLOW='\e[1;93m'
+BLBLUE='\e[1;94m'
+BLMAGENTA='\e[1;95m'
+BLCYAN='\e[1;96m'
 NC='\e[0m'
-L1=$YELLOW
+L1=$BYELLOW
 F1=$LCYAN
 C1=$LYELLOW
-L2=$LCYAN
+L2=$BLCYAN
 F2=$LMAGENTA
-C2=$NC
-L3=$GREEN
-F3=$LCYAN
-C3=$LYELLOW
-L4=$RED
-F4=$LCYAN
-C4=$LYELLOW
-L5=$BLUE
-F5=$LCYAN
-C5=$LYELLOW
-L6=$LGREEN
-F6=$LCYAN
-C6=$LYELLOW
-L7=$MAGENTA
+C2=$LWHITE
+L3=$BGREEN
+F3=$LRED
+C3=$LWHITE
+L4=$BRED
+F4=$LBLUE
+C4=$MAGENTA
+L5=$BBLUE
+F5=$CYAN
+C5=$BLWHITE
+L6=$BLGREEN
+F6=$LYELLOW
+C6=$BLCYAN
+L7=$BMAGENTA
 F7=$LCYAN
 C7=$LYELLOW
-L8=$NC
+L8=$BYELLOW
 F8=$LCYAN
 C8=$LYELLOW
-L9=$NC
+L9=$BBLUE
 F9=$LCYAN
 C9=$LYELLOW
-L10=$NC
+L10=$BRED
 F10=$LCYAN
 C10=$LYELLOW
-L11=$NC
-F11=$LCYAN
-C11=$LYELLOW
-L12=$NC
+L11=$BGREEN
+F11=$BLUE
+C11=$RED
+L12=$BLYELLOW
 F12=$LCYAN
 C12=$LYELLOW
 L13=$NC
@@ -102,7 +117,7 @@ clear;
 echo -ne "${NC}\n\n\n\nDisclaimer : this is done for \e[34;4mpedalogical\e[0;0m purpose only, \033[31;4mpress F11\033[0;0m (or fn F11 on macs) to quit full screen.\nNothing else was changed on your session this is just a display\n\n\nMy login is \033[33m $USER ! \033[0m\n\n\n\n\n";
 
 printf "${L1},---.    ,---.${F2}.-./%s)     ${L3}.-%s-.    ${L4}.---.       ${L5}.-%s-.      ${L6}.-%s-.          ${L7}.--.      .--.${F8}.-./%s)    ${L9}.-%s-. ${L10}.---.  .---.     ${L11}.-%s-.     ${L12}.-%s-.            ${L13}____     __   ${L14},-----.      ${15}___    _\n" '`' "''" "''" "''" '`' "'''" "''" "'''"
-printf "${L1}|    %s  /    |${F2}%s ${C2}.-.${F2}%s)  ${L3}.%s${F3}_ _   ${L3}%s   ${L4}| ${F4},_${L4}|     ${L5}.%s${F5}_ _   ${L5}%s   ${L6}.%s${F6}_ _   ${L6}%s         ${L7}|  |${F7}_     ${L7}|  |${F8}%s${C8} .-.${F8}%s)  ${L9}/ ${F9}_     ${L9}%s${L10}|   |  |${F10}_ _${L10}|   ${L11}.${L12}%s${F12}_ _   ${L12}%s   ${L13}/ ${F12}_     ${L12}%s           ${L13}%s   %s   /  /${L14}.%s  ${F14}.-,  ${L14}%s.  ${15}.%s   |  | | \n" '\' '\' "'" "'" '\' "'" '\' "'" '\' '\' "'" '\' "'" '\' '\' '\' '\' "'" "'" "'"
+printf "${L1}|    %s  /    |${F2}%s ${C2}.-.${F2}%s)  ${L3}.%s${F3}_ _   ${L3}%s   ${L4}| ${F4},_${L4}|     ${L5}.%s${F5}_ _   ${L5}%s   ${L6}.%s${F6}_ _   ${L6}%s         ${L7}|  |${F7}_     ${L7}|  |${F8}%s${C8} .-.${F8}%s)  ${L9}/ ${F9}_     ${L9}%s${L10}|   |  |${F10}_ _${L10}|   ${L11}.${L11}%s${F11}_ _   ${L11}%s   ${L12}/ ${F12}_     ${L12}%s           ${L13}%s   %s   /  /${L14}.%s  ${F14}.-,  ${L14}%s.  ${15}.%s   |  | | \n" '\' '\' "'" "'" '\' "'" '\' "'" '\' '\' "'" '\' "'" '\' '\' '\' '\' "'" "'" "'"
 printf "${L1}|  ,  %s/  ,  |${F2}/ ${C2}%s-%s ${F2}%s ${L3}/ ${F3}( %s )   ${L3}%s${F4},-./  )    ${L5}/ ${F5}( %s )   ${L5}%s ${L6}/ ${F6}( %s )   ${L6}%s        ${L7}| ${F7}_( )_   ${L7}|  |${F8}/ ${C8}%s-%s ${F8}%s ${F9}(%s%s )${L9}/%s--%s${L10}|   |  ${F10}( %s )  ${L11}/ ${F11}( %s )   ${L11}%s ${F12}(%s%s )${L12}/%s--%s            ${L13}%s  ${F13}_${L13}. /  %s${L14}/ ${F14},-.|  %s _ ${L14}%s ${L15}|   .%s  | | \n" '\' '`' "'" '\' '`' "'" '`' "'" '`' "'" '`' "'" '\' '`' "'" '`' "'" "'" '`' "'" '`' "'" '`' "'" '\' "'" '\' '\' "'"
 printf "${L1}|  |%s${F1}_   ${L1}/|  | ${F2}%s-%s%s${L3}. ${F3}(_ ${C3}o ${F3}_)  ${L3}|${F4}%s  %s${C4}_ ${F4}%s) ${L5}. ${F5}(_ ${C5}o ${F5}_)  ${L5}|${L6}. ${F6}(_ ${C6}o ${F6}_)  ${L6}|        ${L7}|${F7}(_ ${C7}o ${F7}_)  ${L7}|  | ${F8}%s-%s%s${F9}(_ ${C9}o ${F9}_)${L9}.   ${L10}|   %s-${F10}(_${C10}{;}${F10}_)${L11}. ${F11}(_ ${C11}o ${F11}_)  ${L11}|${F12}(_ ${C12}o ${F12}_)${L12}.                ${F13}_( )_ ${L13}.%s${L14};  ${F14}%s  %s${C14}_ ${F14}/  | ${L14}:${L15}.%s  %s${F15}_  ${L15}| |\n" '\' '`' "'" '`''"''`' '\' "'" "'"'`' '`' "'" '`''"''`' "'" "'" '\' "'" "'" "'" 
 printf "${L1}|  ${F1}_( )_${L1}/ |  | ${L2}.---. ${L3}|  ${F3}(_,_)${L3}___| ${F4}> ${C4}(_)  ${F4}) ${L5}|  ${F5}(_,_)${L5}___|${L6}|  ${F6}(_,_)${L6}___|        ${L7}| ${F7}(_,_) ${L7}%s |  | ${L8}.---.  ${F9}(_,_)${L9}. %s. ${L10}|      ${F10}(_,_) ${L11}|  ${F11}(_,_)${L11}___| ${F12}(_,_)${L12}. %s.          ${L13}___${F13}(_ ${C13}o ${F13}_)${L13}%s ${L14}|  ${F14}_%s,${C14}/ %s ${F14}_/  ${L14}|${L15}%s   ${F15}( %s.-.${L15}|\n" '\' "'" "'" "'" '`' '\' "'" '\'
